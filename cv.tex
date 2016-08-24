@@ -1,0 +1,195 @@
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage[margin=0.40in, top=0.2in,bottom=0.3in]{geometry}
+\usepackage{multicol}           %% allows to create more than two columns
+\usepackage{array}              %% for adjusting column widths in table
+\usepackage{color}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\setlength{\parindent}{0pt} %% used for setting the no indentation at the beginning of paras
+
+\setlist{nosep}
+\pagenumbering{gobble}
+
+% modern themes
+\moderncvstyle{banking}
+\moderncvcolor{blue}
+\moderncvicons{awesome}
+\definecolor{titleblue}{RGB}{20,20,100}
+
+\newcommand{\experience}[4]{
+  \vspace{0.1cm}
+\item \textbf{\large{#1}} \textit{#2}\hfill\textit{#3}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{0em} #4
+  \end{itemize}
+}
+
+\newcommand{\experiencetwo}[4]{
+  \vspace{0.1cm}
+\item \textbf{\large{#1}} \hfill\textit{#3}\\\textit{#2}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{0em} #4
+  \end{itemize}
+}
+
+
+\newcommand{\education}[5]{
+\item[] \textbf{\large{#1 :}} #2 - \emph{#3: \textbf{#4}} \hfill\textit{#5}
+}
+
+
+%% Personal data
+\firstname{Kaustubh}
+\familyname{Hiware}
+\address{Computer Science and Engineering}{IIT Kharagpur} 
+\email{hiwarekaustubh@gmail.com}
+\extrainfo{vaiagarwal96@iitkgp.ac.in}
+\extrainfo{\emailsymbol\emaillink{hiwarekaustubh@iitkgp.ac.in}}
+\social[github]{kaustubhhiware}
+\social[linkedin]{kaustubhhiware}
+\homepage{http://kaustubhhiware.github.io/}
+\begin{document}
+\maketitle
+\vspace{-1cm}
+\section*{Education}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+
+  \experiencetwo{Bachelor and Master of Technology}{Indian Institute of Technology Kharagpur}{July'2014-May'2019(expected)}{
+   \item CGPA - 8.05/10
+  }
+  
+  \experiencetwo{Senior Secondary - Maharashtra Board}{Shivaji Science College , Nagpur}{Aug'2012-Apr'2014}{
+  \item Percentage : 95.53\%
+  \item Secured 99.98 Percentile of total number of 1.4 million students who appeared for the exam 
+  }
+
+  \experiencetwo{Secondary - CBSE}{Sandipani School , Nagpur}{Apr'2012}{
+  \item Percentage : 96.8\% , CGPA : 10/10
+  \item Was appointed as Head Boy during the year 2011-12
+  \item Appointed as Deputy Head Boy for the session 2010-11
+  \item Appointed as House Vice Captain for the session 2009-10
+  }
+\end{itemize}
+
+\vspace{-0.1cm}
+\section*{Achievements and Scholarships}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+\item All India Rank \textbf{1874} in Joint Entrance Exam (JEE) Advanced
+2014 \textit{among 150,000 candidates}.             \hfill \textit{2014}
+
+\item All India Rank \textbf{277} in Joint Entrance Exam (JEE) Mains 2014(B.E) \textit{among 1.5 million candidates}.              \hfill \textit{2014}
+
+\item All India Rank \textbf{22} in Joint Entrance Exam (JEE) Mains 2014(B.Arch) \textit{among 1.5 million candidates}.              \hfill \textit{2014}
+
+\item Awarded Maharashtra Talent Search Examination Scholarship (Percentile - \textbf{96\%}), \textit{2011}.
+
+\item Awarded State Level Scholarship \textit{2009}.
+
+\end{itemize}
+
+\section*{Interests}
+\begin{tabular}{L{4cm} L{4cm} L{3.4cm} l}
+ Data Analytics & Machine Learning & Algorithms & Open source \\
+\end{tabular}
+
+\vspace{-0.1cm}
+\section*{Projects}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+
+  \experiencetwo{Positioning System using Bipartite Matching and Voronoi Diagrams}{Indian Institute of Technology Kharagpur, under Prof. Jayanta Mukhopadhyay}{May'2016-July'2016}{
+   \item Created a positioning module for humanoid robots using computational geometry concepts of Voronoi Cells and Delaunay Triangulations. Also created a role matching module which uses maximum bipartite matching (Hungarian Algorithm) to allot the generated positions to suitable bots dynamically.  
+  \item Integrated successfully. Increased the time efficiency of the code
+    by 30\% of the previous implementation, using constant memory. 
+  \item The team (including me) participated in 3D Simulation League at RoboCup 2016, Germany.
+  }
+  
+  \experiencetwo{Path Planning module for differential drive robots}{Indian Institute of Technology Kharagpur, under Prof. Jayanta Mukhopadhyay}{May'2015-July'2015}{
+  \item Created a path planner for differential drive soccer playing robots 
+    using Dynamic Window Algorithm.
+  \item Obtained successful results, decreasing the slip parameter to less
+    than 1\%.  
+  \item The implementation was successfully integrated and the team won the 
+    Bronze medal for IIT Kharagpur at FIRA 2015, South Korea.
+  }
+
+  \experience{Data extraction from a 2-D plot}{OpenSoft competition, IIT Kharagpur}{Feb'2016-Mar'2016}{
+  \item Created a module to extract graph information from a plot and create the corresponding data table using OpenCV libraries and Tesseract.
+  \item The implementation was successful in more than 80\% of the cases, including dashed lines and discontinued plots. The extraction module was also used to extract out the legend box from the plot.
+  }
+
+  \experience{Line follower robot}{Robotics workshop at IIT Kharagpur}{Dec'2014}{
+  \item Attended a workshop organised by IEEE and Technology Robotix Society, IIT Kharagpur aimed to create an autonomous line follower robot.
+  \item Worked on techniques to build the robot and subsequently, coded the algorithm using DFS traversal to cover the entire grid of lines, using Atmel Studio.
+  }
+
+  \experience{Hack the Lab}{Microsoft code.fun.do}{Mar'15}{
+  \item   Developed a Windows application along  with a team of 3 to simplify calculations in lab , using best fit line algorithm and stimulating the output on a graph.
+  }
+
+  \experience{Department Information System}{Software Project}{Mar'2016}{
+  \item Software project under Prof. Partha Pratim Das, IIT Kharagpur .
+  \item Created a software in Java which allows users to buy and sell items to different users.
+  \item The user can perform administrative roles on his profile and history log, as well as interact with other users through messaging.
+  \item Awarded with an "Exceptional" grade in the project work.
+  }
+
+\end{itemize}
+
+\section*{Work and Volunteer Experience}
+\begin{itemize}
+  \setlength\itemsep{0.5em}
+
+  \experience{Software Team Member}{Team Autonomous Ground Vehicle}{Mar'15-Nov'15}{
+  \item Software team member at AGV, an active research group of IIT Kharagpur.
+  \item Worked as a member of Stimulation team using Gazebo for real-life testing.
+  }
+    
+  \experience{Junior Executive}{Gopali Youth Welfare Society}{Aug'14 - Nov'15}{
+  \item Worked as a Junior executive member at GYWS , one of the few NGOs run solely by students.
+  \item A part of Literary , Media and Publicity Team where  ideas were to be suggested to widen the impact of the society and implementing them.
+  }
+
+\end{itemize}
+
+\section*{Technical Skills}
+\begin{tabular}{L{0.05cm} L{5cm} l}
+  &Programming Languages      &C/C++, Java, Python, C\#, PHP, x86 Assembly\\
+  &Web Development              &HTML, CSS, Javascript\\
+  &Operating Systems          &Ubuntu, Microsoft Windows\\
+  &Utilities                  &Git, Shell\\
+\end{tabular}
+
+\section*{Relevant Courses}
+% \begin{tabular}{L{0.05cm} L{6.5cm} L{7.0cm} L{8cm} L{8cm} L{12cm}}
+\begin{tabular}{L{7.2cm} L{6.0cm} L{5.6cm}l}
+  Algorithms 1 & Algorithms 2 * &
+  Data Analytics * \\  Software Engineering & Automata Theory &  Compilers * \\
+  Computer Organization *  & Discrete Structures & Data Structures\\
+  Switching Circuits and Logic Design &
+  Probability and Statistics & Matrix Algebra *\\
+  \textit{* denotes ongoing courses} \\
+\end{tabular}
+
+\section*{Miscellaneous}
+\begin{itemize}
+  \item Believe in Open Source and contribute ti self=projects.
+  \item Participated in Open IIT Hindi as well as English Elocution in the year 2015.
+  \item National Cadet Corps cadet for 2 years , July'14 - Mar' 16
+
+\end{itemize}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "Kaustubh_CV"
+%%% End:
