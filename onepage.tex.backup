@@ -1,0 +1,227 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Deedy CV/Resume
+% XeLaTeX Template
+% Version 1.0 (5/5/2014)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% 
+% Original author:
+% Debarghya Das (http://www.debarghyadas.com)
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+% 
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+% 
+% Important notes:
+% This template needs to be compiled with XeLaTeX.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\documentclass[a4paper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
+
+\newcommand{\onepage}[1]{
+  \ifdefined\onep
+  #1
+  \fi
+}
+
+\begin{document}
+\namesection{Kaustubh}{Hiware}{
+  Computer Science and Engineering, IIT Kharagpur \\
+  --\\
+  \href{mailto:hiwarekaustubh@iitkgp.ac.in}{ hiwarekaustubh@iitkgp.ac.in}  |  (+91) 8768829567\\
+  Indian Institute of Technology Kharagpur - 721302}
+\begin{minipage}[t]{0.33\textwidth} % The left column takes up 33% of the text width of the page
+
+  \section{Education} 
+
+  \descriptbig{IIT Kharagpur}
+
+  \descript{B.Tech+M.Tech in Computer Science \\ and Engineering}
+  \location{2014-Present | CGPA: \textit{8.05/10}}
+
+  \sectionspace
+  \sectionspace
+  
+  \descriptbig{Shivaji Science College, \\ Nagpur(State Board)}
+  \descript{Senior Secondary Grade 12}
+  \location{Overall: \textbf{95.54\%}}
+
+  \sectionspace
+  \sectionspace
+  
+  \descriptbig{Sandipani School, \\ Nagpur (CBSE)}
+  \descript{Secondary Grade 10}
+  \location{Overall: \textbf{96.8\%}}    
+    
+  \sectionspace
+
+  \section{Links} 
+
+  Github:// \href{https://github.com/kaustubhhiware}{\bf kaustubhhiware} \\
+  LinkedIn:// \href{https://www.linkedin.com/in/kaustubhhiware}{\bf kaustubhhiware} \\
+  Website:// \href{http://kaustubhhiware.github.io/}{\bf kaustubhhiware} \\
+  
+  \sectionspace
+
+  \section{CS Coursework}
+  Algorithms 1, Algorithms 2 *\\
+  Software Engineering \\
+  Computer Organization *\\
+  Programming \& Data Structures\\
+  Compilers *, Automata Theory\\
+  Discrete Structures\\
+  Matrix Algebra *, Data Analytics *\\
+  Probability and Statistics\\
+  Switching Circuit and Logic \\
+
+  {\footnotesize \textit{\textbf{(* denotes ongoing courses) }}} \\
+
+  \sectionspace
+
+  \section{Skills}
+
+  \runsubsection{}
+  \descriptbig{Programming Languages}
+  C/C++ \textbullet{} Java \textbullet{} Python \\
+  \textbullet{} x86 Assembly
+
+  \sectionspace
+  \sectionspace
+
+  \descriptbig{Operating Systems}
+  Ubuntu \textbullet{} Microsoft Windows
+
+  \sectionspace
+  \sectionspace
+
+  \descriptbig{Utilities}
+  Git \textbullet{} Linux Shell  \\
+  \textbullet{} OpenCV
+
+  \sectionspace
+  \sectionspace
+
+  \section{Interests}
+  Data Analytics \\
+  Machine Learning \\
+  Algorithms \\
+  NLP \\
+  Open source \\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.66\textwidth}
+
+  \section{Awards and Achievements}
+
+\fontspec[Path = fonts/raleway/]{Raleway-Light}\fontsize{11pt}{11pt}\selectfont {
+
+  \begin{tabular}{rll}
+    2014	 & \bold{All India Rank 1874}, JEE Advanced, among 150,000 candidates\\
+    2014	 & \bold{All India Rank 277}, JEE Mains(I), among 1.5 million candidates\\
+    2014     & \bold{All India Rank 22}, JEE Mains(II), among 150,000 candidates\\
+    2011     & \bold{Maharashtra Talent Search} (Govt of Maharashtra) scholarship awardee\\
+  \end{tabular}
+}\\
+\normalfont
+
+  \sectionspace
+
+
+  \section{Experience and Projects}
+
+  \runsubsection{}
+  \descriptnonewline{Undergraduate Researcher}\location{| May'16-July'16}
+  \location{Kharagpur RoboSoccer Students' Group, IIT Kharagpur}
+  \vspace{\topsep}
+  \begin{tightitemize}
+  \item Developed positioning module for humanoid robots using Voronoi cell method and dynamic role assignment using maximum bipartite matching Hungarian algorithm.
+  \item	Integrated successfully. Increased time efficiency by 30\%.
+  \item Participated in RoboCup 2016, Germany.
+  \end{tightitemize}
+
+  \sectionspace
+
+  \runsubsection{}
+  \descriptnonewline{Undergraduate Researcher}\location{| May'15-July'15}
+  \location{Kharagpur RoboSoccer Students' Group, IIT Kharagpur}
+  \begin{tightitemize}
+  \item Created a path planner for differential drive autonomous robots.
+  \item	Decreased slip parameter to less than 1\%.
+  \item The team won Bronze at FIRA 2015, South Korea.
+  \end{tightitemize}
+
+  \sectionspace
+  
+  \runsubsection{}
+  \descriptnonewline{Undergraduate Researcher}\location{| Aug'16-Present}
+  \location{Smart Wireless Applications and Networking Group, IIT Kharagpur}
+  \begin{tightitemize}
+  \item The group, under the School of Information Technology IIT Kharagpur, works in the field of IoT and nano networks.
+  \item	Working on bacterial nano networks and its applications in the world of IoT.
+  \end{tightitemize}
+
+  \sectionspace
+
+  \runsubsection{}
+  \descriptnonewline{Software Developer}\location{OpenSoft, IIT Kharagpur | Spring '16}
+  \begin{tightitemize}
+  \item Created a software to extract details from a plot and tabulate them using OpenCV and tessaract.
+  \end{tightitemize}
+
+  \sectionspace
+
+  \runsubsection{}
+  \descriptnonewline{Back End Developer}\location{Game Theory Society,
+    IIT Kharagpur}
+  \begin{tightitemize}
+  \item Contributed to back end of an online game made using CodeIgnitor framework in php.
+  \item Played by over 1000 participants from across India.
+  \end{tightitemize}
+
+
+  \sectionspace
+
+  \runsubsection{}
+  \descriptnonewline{Image Processing Mentor}\location{IIT Kharagpur | Dec'15}
+  \begin{tightitemize}
+  \item Mentored over 50 students in IEEE certified workshop.
+  \item Taught various image processing techniques and algorithms.
+  \end{tightitemize}
+
+  \sectionspace
+
+  \runsubsection{}
+  \descriptnonewline{Code Club}\location{Programming Mentor | IIT Kharagpur}
+  \begin{tightitemize}
+  \item Problem setter and tester in coding contests at IIT Kharagpur.
+  \item Mentored over 100 students in algorithms and data structures.
+  \item Provided logistics support for Bitwise 2016, which saw the participation of over 1000 programmers across the globe.
+  \end{tightitemize}
+  
+  \sectionspace
+
+  \runsubsection{}
+  \descriptnonewline{Grid Follower}\location{Robotics Workshop, IIT Kharagpur | Dec'14}
+  \begin{tightitemize}
+  \item Attended Texas Instruments certified workshop and built an autonomous grid follower robot using Atmel Studio.
+  \item Programmed the algorithm using DFS traversal to cover the entire grid.
+  \end{tightitemize}
+
+  \section{Miscellaneous}
+  \vspace{\topsep}
+  \begin{tightitemize}
+  \item Participated in Open IIT Data Analytics in the year 2015.
+  \item Participated in Open IIT Hindi as well as English Elocution in the year 2015.
+  \item National Cadet Corps cadet for 2 years , July'14 - Mar' 16
+  \end{tightitemize}
+\end{minipage}
+
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-engine: xetex
+%%% End:
