@@ -1,4 +1,4 @@
 # CV-seewe
 Come see this CV
 
-Thank you [Vaibhav](https://github.com/VaibhavAgarwalVA) for your CV :smile:
+Thank you [Vaibhav](https://github.com/VaibhavAgarwalVA) for your CV and [Rameshwar](https://github.com/zorroblue) for your invaluable suggestions.:smile:
