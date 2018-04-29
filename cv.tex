@@ -1,205 +1,251 @@
-\documentclass[10pt,a4paper]{moderncv}
-\usepackage[margin=0.40in, top=0.2in,bottom=0.3in]{geometry}
-\usepackage{multicol}           %% allows to create more than two columns
-\usepackage{array}              %% for adjusting column widths in table
-\usepackage{color}
-\usepackage{lipsum}
-\usepackage{enumitem}
-\usepackage[utf8]{inputenc}
-\usepackage{bbding}
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\setlength{\parindent}{0pt}	%% used for setting the no indentation at the beginning of paras
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
-\setlist{nosep}
-% modern themes
-\moderncvstyle{banking}
-\moderncvcolor{blue}
-\moderncvicons{awesome}
-\definecolor{titleblue}{RGB}{20,20,100}
+\documentclass{resume} % Use the custom resume.cls style
 
-\newcommand{\experience}[4]{
-  \vspace{0.1cm}
-  \item \textbf{\large{#1}} \hfill\textit{#3}\\\textit{#2}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{0em} #4
-  \end{itemize}
-}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{parnotes}
+\usepackage{hyperref}
 
-\newcommand{\project}[3]{
-  \vspace{0.1cm}
-  \item \textbf{\large{#1}} \hfill\textit{#2}\\\textit{Self project}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{0em} #3
-  \end{itemize}
-}
-
-\newcommand{\education}[4]{
-  \item \textbf{\large{#1}} \hfill #3\\\textit{#2} \hfill #4
-}
-
-\newcommand{\newlink}[2]{
-  \href{#1}{\color{blue}#2}
-}
-
-\newcommand{\achieve}[2]{
-  \item #1 \hfill \textit{#2}
-}
-  
-%% Personal data
-\firstname{Kaustubh}
-\familyname{Hiware}
-\address{Computer Science and Engineering}{IIT Kharagpur} 
-\email{hiwarekaustubh@gmail.com}
-\homepage{https://kaustubhhiware.github.io/}
-\extrainfo{\phonesymbol{+91 8768829567} \makeheaddetailssymbol \emailsymbol\emaillink{hiwarekaustubh@iitkgp.ac.in}}
-\social[github]{kaustubhhiware}
-\social[linkedin]{kaustubhhiware}
-
+\name{ Kaustubh   Hiware} % Your name
+%\address{ C-123 Azad Hall of Residence, IIT Kharagpur, West Midnapore \\ West Bengal, India 721302} % Your address
+\address{150 Ulhasnagar, Manewada Square, Nagpur \\ Maharashtra, India 440027} % Your secondary address (optional)
+\address{+91 8768829567 \\ hiwarekaustubh@gmail.com \\  hiwarekaustubh@iitkgp.ac.in} % Your phone number and email
+\address{\url{kaustubhhiware.github.io}}
 \begin{document}
-\maketitle
-\vspace{-1cm}
-\section*{Education}
-\begin{itemize}
-  \setlength\itemsep{1em}
 
-  \education{Bachelor and Masters of Technology}{Indian Institute of Technology Kharagpur}{July 2014-May 2019(expected)}{CGPA: 8.14/10}
-  \education{Senior Secondary- Maharashtra Board}{Shivaji Science College, Nagpur}{Aug 2012-Apr 2014}{Percentage: 95.53\%}
-  \education{Secondary- CBSE}{Sandipani School, Nagpur}{Apr 2012}{Percentage: 96.8\% , CGPA: 10/10}
-\end{itemize}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
 
-\section*{Work Experience}
-\begin{itemize}
-  \setlength\itemsep{0.5em}
+\begin{rSection}{Education}
 
-  \experience{\href{https://drive.google.com/open?id=0B5iU6cWw36rOVWZIcllPY3RSd2c}{Developer Intern}}{Elanic, Bangalore}{May 2017 - June 2017}{
-  	\item	Worked on feature addition, data sanitization, indexing and writing abstractions on the backend.
-  	\item Automated testing suite using Jenkins.
-  	\item Developed a npm module \href{https://www.npmjs.com/package/urlparamify}{\textit{urlparamify}} to be used in developing website, which received over \href{https://drive.google.com/open?id=0B5iU6cWw36rOd09Bc3ZNV1p4UTQ}{\textit{2500}} downloads in a month.
-  }
-    
-  \experience{\href{https://github.com/orgs/coala/teams/coala-developers/members?&query=kaustubh}{Open source Developer}}{coala: Language Independent Code Analysis | Python}{March 2017 - Present}{
-  	\item coala provides a unified command-line interface for linting and fixing code, independent of programming languages used.
-  	\item Sucessfully merged 4 out of 6 submitted patches. 
-  }
+{\bf \large Indian Institute of Technology Kharagpur, West Bengal} \hfill \textbf{Jul $^{\prime}$14 - Jul $^{\prime}$19}\textit{(expected)} \\ 
+B.Tech. \& M.Tech. Hons. in Computer Science \& Engineering \\
+Overall CGPA: 8.19/10
 
-\end{itemize}
+{\bf \large Shivaji Science College, Nagpur} \hfill \textbf{2014} \\ 
+Senior Higher Secondary School Education, Maharashtra State Board \\
+Overall Percentage: 95.54\%. Percentile: 99.98\%
 
-\vspace{-0.1cm}
-\section*{Projects}
-\begin{itemize}
-  \setlength\itemsep{0.5em}
+{\bf \large Sandipani School, Nagpur} \hfill \textbf{2012} \\ 
+Higher Secondary School Education, Central Board for Secondary Education \\
+Overall CGPA: 10/10
 
-  \experience{Emotion detection using smart devices}{B.Tech project, Indian Institute of Technology Kharagpur}{Jan 2017-Present}{
-  	\item Identify emotional state cues from smart device usage patterns.
-  	\item Build a machine learning based emotion detection model, with minimal user interaction.
-  	\item Will be working under the supervision of Prof. Bivas Mitra.
-  }
+\end{rSection}
 
-  \experience{Transductive learning for Derivational Morphology}{Indian Institute of Technology Kharagpur}{July 2016-April 2017}{
-    \item A Graph based semi-supervised approach for analysis of Derivational Nouns in Sanskrit.
-    \item	Worked under the supervision of Prof. Pawan Goyal and Complex Networks Research Group, IIT Kharagpur.
-    \item \href{https://scholar.google.co.in/citations?view_op=view_citation&hl=en&user=9iIiFjMAAAAJ&citation_for_view=9iIiFjMAAAAJ:u5HHmVD_uO8C}{Research paper accepted in ACL TextGraphs 2017}.
-  }
+%----------------------------------------------------------------------------------------
+%	ACADEMIC ACHIEVEMENTS SECTION
+%----------------------------------------------------------------------------------------
 
-  \experience{Graphwise - Large Scale Distributed Graph Processing}{Indian Institute of Technology Kharagpur}{Apr 2017}{
-  	\item Used Louvain algorithm to detect communities in large networks in scala and t-SNE, a dimensionality reduction technique for data visualisation in python.
-  	\item Reached a maxium modularity of \textbf{98.6\%}. Open sourced the project on \newlink{https://github.com/kaustubhhiware/Graphwise}{Github}.
-  	\item Developed by a team of 5 as an academic project for the Database Management Systems course under Prof. Pabitra Mitra.
-  }
+\begin{rSection}{Academic Achievements}
 
-  \experience{Foodspark}{Indian Institute of Technology Kharagpur}{Feb 2017}{
-  	\item A Django(python) webapp for online food ordering system. Hosted website on \newlink{http://foodkgp.pythonanywhere.com/}{pythonanywhere}.
-  	\item Developed by a team of 5 as an academic project for the Database Management Systems course under Prof. Pabitra Mitra.
-  }
- 
-  \experience{c0derunR}{\href{https://drive.google.com/open?id=0B5iU6cWw36rOOG9yZ2hxSTFTUEk}{Microsoft Code.fun.do 2017}}{Jan 2017}{
-  	\item A Django(python) webapp for Integrated Development Environment using HackerEarth API.
-  	\item Includes a static website generator which allows you to view the changes you make on the go.
-  	\item Hosted the project on \newlink{http://c0derunr.herokuapp.com/}{heroku}.
-  }
+{\bf \large Joint Entrance Examination (JEE) - Advanced} \hfill \textbf{2014} \\ 
+Among top \textbf{1.2\%} of the \textbf{0.15 million} candidates, ranking \textbf{1874}.
 
-  \project{Notifyre}{Dec 2016}{
-	\item A terminal task notifier with support of basic customzations. 
-	\item Supports bash, and fish shell. Source code available on \newlink{https://github.com/kaustubhhiware/NotiFyre}{Github}.
-  }
-  
-  \experience{Tiny-C compiler}{Indian Institute of Technology Kharagpur}{Nov 2016}{
-  \item A restricted grammar C compiler made using flex,yacc and gnu assembler. Available on  \newlink{https://github.com/kaustubhhiware/cOMPILER}{GitHub}.
-  \item A Compilers course project under Prof. Partha Pratim Das, IIT Kharagpur.
-  }
+{\bf \large Joint Entrance Examination (JEE) - Mains(B.E)} \hfill \textbf{2014} \\ 
+Among top \textbf{0.01\%} of the \textbf{1.4 million} candidates, ranking \textbf{277}.
 
-  \project{Wordabulary}{May 2016}{
-    \item A python pip module for grammar statistics. Available on \newlink{https://github.com/kaustubhhiware/Wordabulary}{GitHub}.
-    \item Support trivial document analysis. Developed as a module to validate Zipf's law.
-  }
+{\bf \large Joint Entrance Examination (JEE) - Mains(B.Arch)} \hfill \textbf{2014} \\ 
+Among top \textbf{0.01\%} of the \textbf{0.15 million} candidates, ranking \textbf{22}.
 
-  \experience{Data extraction from a 2-D plot}{OpenSoft competition, IIT Kharagpur}{Feb 2016-Mar 2016}{
-  	\item Created a module to extract graph information from a plot and create the corresponding data table using OpenCV libraries and Tesseract.
-  	\item The code for the same is available at \newlink{https://github.com/Azad-Hall/open-soft-2015-2016}{Github}.
-  }
+\end{rSection}
 
-  \experience{Department Information System}{Software Project}{Mar 2016}{
-  \item Created a software which allows the administrator to perform managerial tasks. Source code on \newlink{https://github.com/kaustubhhiware/DepInfosys}{Github}.
-  \item Software project(Java) under Prof. Partha Pratim Das, IIT Kharagpur .
-  }
-\end{itemize}
+%----------------------------------------------------------------------------------------
+%	Submitted Papers SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Accepted Publications}
 
-\section*{Technical Skills}
-\begin{tabular}{L{0.05cm} L{5cm} l}
-  &Programming Languages      &Proficient: C/C++, Python, Javascript/NodeJS\\
-  &                           &Familiar: Java, Assembly, Scala, R \\
-  &Databases				   &MySQL/SQLite, MongoDB\\
-  &Web			               &HTML, CSS/SCSS, Bootstrap, Jekyll, Django, React\\
-  &Frameworks/Tools			   &OpenCV, Gazebo, Postman, Spark, Markdown\\
-  &Utilities                   &Git, Shell, TravisCI, Elasticsearch, Heroku, \LaTeX\\
+[a] Ritam Dutt, \textbf{Kaustubh Hiware}, Avijit Ghosh, Rameshwar Bhaskaran.\href{https://www.cse.iitk.ac.in/users/kripa/smerp2018/savitr-system-real-ritam.pdf}{SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies.} "In: \textit{Exploitation of Social Media for Emergency Relief and Preparedness (SMERP), colocated with The Web Conference 2018 (formerly WWW)}
+\textbf{\small Key Topics}: Emergencies, microblogs, location extraction, Geonames
+
+[b] Amrith Krishna, Pavankumar Satuluri, Harshavardhan Ponnada, Muneeb Ahmed, Gulab Arora, \textbf{Kaustubh Hiware}, Pawan Goyal.\href{http://www.aclweb.org/anthology/W17-2409}{A Graph Based Semi-Supervised Approach for Analysis of Derivational Nouns in Sanskrit} "In: \textit{TextGraphs-11: the Workshop on Graph-based Methods for Natural Language Processing, ACL 2017}
+\textbf{\small Key Topics}: Sanskrit Word-Segmentation, Network-based learning, Natural Language Processing
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	ACADEMIC PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Academic Projects}
+
+\begin{rSubsection}{ \large Emotion detection using smart devices}{\textbf{\large Jan $^{\prime}$17 - Present}}{B.Thesis Project under Asst. Prof. Bivas Mitra}{CSE Dept. IIT Kharagpur}
+\item \textit{Abstract} - We investigate the role of both types of touch interactions in multi-state emotion detection for a generic context. We distinguish between typing and swyping by using a clustering method and extract features corresponding to individual interaction.
+
+\item Involves jointly modelling typing and swyping features and correlate them with user provided self-reports to build a personalized machine learning model, which can can detect four emotion states (happy, sad, stressed, relaxed.
+
+\item 2 research publications submitted pertaining to this project, pending review.
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{ \large SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies.}{\textbf{\large July $^{\prime}$16-April $^{\prime}$17}}{Research Project under Asst. Prof. Saptarshi Ghosh}{CSE Dept. IIT Kharagpur}
+\item \textit{Abstract} - A Graph based semi-supervised approach for analysis of Derivational Nouns in Sanskrit.
+
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{ \large Transductive learning for Derivational Morphology}{\textbf{\large July $^{\prime}$16-April $^{\prime}$17}}{Research Project under Asst. Prof. Pawan Goyal Ghosh}{CSE Dept. IIT Kharagpur}
+\item \textit{Abstract} - A Graph based semi-supervised approach for analysis of Derivational Nouns in Sanskrit.
+
+\end{rSubsection}
+%------------------------------------------------
+
+\begin{rSubsection}{ \large Graphwise - Large Scale Distributed Graph Processing}{\textbf{\large April $^{\prime}$17}}{Academic Project under Prof. Pabitra Mitra}{CSE Dept. IIT Kharagpur}
+
+\item Used Louvain algorithm to detect communities in large networks with scala and t-SNE, a dimensionality reduction technique for data visualisation in python.
+
+\item Reached a maxium modularity of 98.6\%. Open sourced the project on \href{https://github.com/kaustubhhiware/Graphwise}{Github}.
+\end{rSubsection}
+%------------------------------------------------
+
+
+\end{rSection}
+
+%------------------------------------------------
+
+\begin{rSection}{\large Open-Source Projects}{}{More projects can be found at \textbf{\large \url{https://github.com/kaustubhhiware}}}
+
+{\bf \large Foodspark} \hfill \textbf{Feb $^{\prime}$17} \\ 
+Academic Project under Prof. Pabitra Mitra. A Django(python) webapp for online food ordering system. Hosted website on \href{http://foodkgp.pythonanywhere.com}{pythonanywhere}.
+%----------------------------------------------
+
+{\bf \large c0derunR} \hfill \textbf{Jan $^{\prime}$17} \\ 
+Developed during Microsoft's Code.fun.do. A Django(python) webapp for Integrated Development Environment using HackerEarth API. Offers a static website generator reflecting on-the-go changes. \url{http://c0derunr.herokuapp.com}.
+%----------------------------------------------
+
+{\bf \large Notifyre} \hfill \textbf{Dec $^{\prime}$16} \\ 
+A terminal task notifier with support of basic customzations. Supports bash, zsh and fish shell. \href{https://github.com/kaustubhhiware/ NotiFyre}{Github repository} received 28 stars so far.
+%----------------------------------------------
+
+{\bf \large Notifyre} \hfill \textbf{Dec $^{\prime}$16} \\ 
+A terminal task notifier with support of basic customzations. Supports bash, zsh and fish shell. \href{https://github.com/kaustubhhiware/ NotiFyre}{Github repository} received 28 stars so far.
+%----------------------------------------------
+
+%------------------------------------------------
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	INTERNSHIPS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Internships}
+
+\begin{rSubsection}{\large Elanic}{\textbf{\large May $^{\prime}$17- Jul $^{\prime}$17}}{Developer Intern}{Bangalore, Karnataka}
+\item Worked on feature addition, data sanitization, indexing and writing abstractions on the backend.
+\item Automated testing suite using Jenkins.
+\item Developed a npm module \href{https://www.npmjs.com/package/urlparamify}{urlparamify} to be used in developing website, which received over 3000 downloads so far.
+\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	POSITIONS OF RESPONSIBILITES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Positions of Responsibility}
+
+%\begin{rSubsection}{\large Kshitij\parnote{\textbf{\textit{Kshitij}} : Asia's Largest \& IIT Kharagpur's Annual Techno-Management Fest \\}}{\textbf{\large Apr $^{\prime}$16 - May $^{\prime}$17}}{Web Head}{IIT Kharagpur, WB}
+%\item Developed from scratch, the original version of \textit{\textbf{VMWare}} sponsored \textit{\textbf{Supply Matrix}} (\textit{Supply Chain Management} based online game) \& \textbf{Woodstock/Forex} (\textit{Virtual Share Market} with real-world data)
+%\item Framed website's backend with advance \textit{\textbf{Profile Management System, Online Games, Payment \& Accommodation Portal}} with a \textit{\textbf{REST API}} for swift \& simplified data processing
+%\end{rSubsection}
+
+%------------------------------------------------
+
+%\begin{rSubsection}{\large Technology Transfer Group (TTG)\parnote{\textbf{\textit{TTG}} : Official student body under the aegis of SRIC, IIT Kharagpur \\}}{\textbf{\large May $^{\prime}$16 - Jul $^{\prime}$17}}{Web Head}{IIT Kharagpur, WB}
+%\item Lead Developer of the \textit{\textbf{Undergraduate(UG) Portal}} aimed at seamless Professor-Student collaboration in the Institute, to be launched by \textit{\textbf{Dean SRIC\parnote{\textbf{\textit{SRIC}} : \textbf{S}ponsored \textbf{R}esearch \textbf{I}ndustrial \textbf{C}onsultancy acts as a link between the Industry and IIT Kharagpur \\}, Prof. Pallab Das Gupta}}
+%\item Maintained \textit{\textbf{IP-Portal}\parnote{\textbf{\textit{IP-Portal}} : A portal to monitor patent process at IIT Kharagpur \\}} \& developed official websites of \textit{\textbf{TedXIITKharagpur 2016, 2017}}
+%\end{rSubsection}
+
+%------------------------------------------------
+
+%\begin{rSubsection}{\large ACM International Collegiate Programming Contest}{\textbf{\large Aug $^{\prime}$16 - Dec $^{\prime}$16}}{Technical Administrator}{IIT Kharagpur, WB}
+%\item Coordinated with \textit{\textbf{CodeChef}} to successfully conduct ACM-ICPC Asia Regionals at Kharagpur
+%\item Developed the \textit{\textbf{ACM IIT Kharagpur Chapter}} website \& maintained it's server
+%\end{rSubsection}
+
+%------------------------------------------------
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT COURSES SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Relevant Courses}
+
+\begin{center}
+\begin{tabular}{p{3.9cm} p{3.0cm} p{6.5cm} p{4.0cm}}
+  Deep Learning$^+$ & Machine Learning & Natural Language Processing$^+$ & Artificial Intelligence\\
+  Social Computing$^+$ & Data Analytics$^+$ & Database Management$^+$ & Operating Systems$^+$\\
+  Computer Networks$^+$ & Compilers$^+$ & Computer Organisation$^+$ & Matrix Algebra\\
+  Software Engineering$^+$ & Algorithms$^+$ & Formal Language \& Automata Theory & Discrete Structures\\
+\end{tabular}
+\footnotesize \textit{(* denotes ongoing courses, $^+$ denotes practicum included)}
+\end{center}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python $\bullet$ C $\bullet$ C++ $\bullet$ JavaScript $\bullet$ Java $\bullet$ Assembly $\bullet$ Scala $\bullet$ R \\
+Web & HTML $\bullet$ CSS / SCSS $\bullet$ Django $\bullet$ Jekyll $\bullet$ Bootstrap $\bullet$ React \\
+Tools \& Frameworks & Git $\bullet$ NodeJS $\bullet$ Shell/Fish $\bullet$ Elasticsearch $\bullet$ TravisCI $\bullet$ Heroku $\bullet$ \LaTeX \\
+Databases & MongoDB $\bullet$ MySQL $\bullet$ SQLite3 \\
+Operating Systems & Ubuntu/Linux $\bullet$ Windows
 \end{tabular}
 
-\section*{Relevant Courses}
-\begin{tabular}{p{5.2cm} p{5.2cm} p{5.2cm} p{5.2cm}}
-  Algorithms 1$^+$ \& 2 & Software Engineering$^+$ & Automata Theory & Operating Systems$^+$\\
-  Computer Organization$^+$ & Compilers$^+$ & Computer Networks$^+$ & Data Analytics\\
-  Database Management$^+$ & Matrix Algebra & Theory of Computation* & Artificial Intelligence*\\
-  Discrete Structures & Machine Learning* & Natural Language Processing* & Social Computing*\\
-\end{tabular}
-\footnotesize \textit{(* denotes ongoing courses, $^+$ denotes lab included)}
+\end{rSection}
 
-\vspace{-0.1cm}
-\section*{Achievements and Scholarships}
-\begin{itemize}
-  \setlength\itemsep{0.5em}
-  \achieve{Proposal \textbf{ResSearch} selected for final round of\newlink{https://drive.google.com/open?id=0B5iU6cWw36rOamZLWHZENWdlY0k}{Smart India Hackathon} among \textbf{8000} entries.}{2017}
-  \achieve{All India Rank \textbf{1874} in Joint Entrance Exam (JEE) Advanced 2014 \textit{among 150,000 candidates}.}{2014}
-  \achieve{All India Rank \textbf{277} in Joint Entrance Exam (JEE) Mains 2014(B.E) \textit{among 1.5 million candidates}.}{2014}
-  \achieve{All India Rank \textbf{22} in Joint Entrance Exam (JEE) Mains 2014(B.Arch) \textit{among 150,000 candidates}.}{2014}
-  \achieve{Selected for INSPIRE scholarship.}{2014}
-  \achieve{Awarded Maharashtra Talent Search Examination Scholarship (Percentile - \textbf{96\%}).}{2011}
-  \achieve{Awarded State Level Scholarship via regionally held exam.}{2009}
+%----------------------------------------------------------------------------------------
+%	ACHIEVEMENTS SECTION
+%----------------------------------------------------------------------------------------
 
-\end{itemize}
+\begin{rSection}{Co-Curricular Achievements}
+%$\bullet$ Receiving scholarship under the \textit{\textbf{Prime-Minister Scholarship Scheme (PMSS\parnote{\textbf{\textit{PMSS}} : Awarded to wards of Ex-Servicemen studying in IITs/NITs})}} since 2014 \\
+%$\bullet$ \textit{\textbf{State Rank - 2$^{nd}$, \textit{School Rank - 1$^{st}$}}} in \textit{\textbf{6$^{th}$ SOF\parnote{\textbf{\textit{SOF}} : Science Olympiad Foundation} International Mathematics Olympiad}}
+$\bullet$ Proposal \href{https://docs.google.com/presentation/d/1ndJbIQCxFEf__I55yOOME-a_UGWDv1KMlukVE2lbDeA/}{ResSearch} selected for final round of \href{https://drive.google.com/open?id=0B5iU6cWw36rOamZLWHZENWdlY0k}{Smart India Hackathon}. \\
+$\bullet$ Qualified for Innovation in Science Pursuit for Inspired Research {\bf \large (INSPIRE)} scholarship, awarded to only \textbf{0.01\%} students every year. \\
+$\bullet$ Received scholarship under Maharashtra Talent Search Examination, obtaining a percentile of 96\%.
+%$\bullet$ School-level representation at multiple quiz competitions, debate and extempores.
+%$\bullet$ Have consistently been a member of school student board, holding the positions of Head Boy and Deputy Head Boy consecutively.
+\end{rSection}
 
-\section*{Miscellaneous}
-\begin{itemize}
-  \setlength\itemsep{0.5em}
-  \item Frequent open source contributor on \newlink{https://github.com/kaustubhhiware}{GitHub.}
-  \item Appointed as \href{https://drive.google.com/file/d/0B5iU6cWw36rOc0gzcjZPRTd5SkU/view}{student mentor} for 6 first year undergraduate students, Aug 2016 - Present.
-  \item Software team member, Autonomous Ground Vehicle, for the duration Mar 2015 - Nov 2015.
-  \item Junior Executive at Gopali Youth Welfare Society, during the period Aug 2014 - Apr 2015.
-  \item Participated in Open IIT Data Analytics, 2015.
-  \item Participated in Open IIT Hindi, English Elocution, 2015.
-  \item National Cadet Corps cadet for 2 years, July 2014 - Mar 2016
-\end{itemize}
+%----------------------------------------------------------------------------------------
 
-	\vspace*{\fill}
-	\begin{flushright}
-	\footnotesize Last updated: Aug 15, 2017.
-	\end{flushright}
+%----------------------------------------------------------------------------------------
+%	VOLUNTEER EXPERIENCES SECTION
+%----------------------------------------------------------------------------------------
 
+\begin{rSection}{Volunteer Experiences}
+
+\begin{rSubsection}{\large Student Welfare Group (SWG)}{\textbf{\large Jul $^{\prime}$16 - Present}}{Mentor}{IIT Kharagpur}
+\item Providing guidance to a group of 6 Undergraduate Students under SWG's \textit{Student-Mentor Program} to smoothen their academic transition as well as bolster growth in non-academic dimensions
+\item Help them prepare a better study plan for upcoming semester by providing an incisive analysis of the upcoming subjects along with insightful details about diverse career opportunities to peruse
+\end{rSubsection}
+%---------------------------------------------------------------------
+
+\begin{rSubsection}{\large 3 Bengal Tech Air Squadron}{\textbf{\large Jul $^{\prime}$14 - Jul $^{\prime}$16}}{Cadet}{IIT Kharagpur, WB}
+\item Actively participated in numerous \textit{Tree Plantation \& Blood Donation Camps}
+\item Attended the Annual NCC Camp \& organised as well as presented at the closing ceremony
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 \end{document}
-
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "Kaustubh_CV"
-%%% End:
