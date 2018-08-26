@@ -1,0 +1,118 @@
+\documentclass[11pt, a4paper]{resume}
+\usepackage{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{lipsum}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+% \renewcommand{\familydefault}{\sfdefault} %sans-serif everywhere
+
+\definecolor{mypurple}{HTML}{794BC4}
+\definecolor{gray}{HTML}{727272}
+\newcommand{\important}[1]{
+	\textcolor{mypurple}{#1}
+}
+\newcommand{\greyed}[1]{
+	\textcolor{gray}{#1}
+}
+\newcommand{\titleX}[1]{
+	\begin{LARGE}
+    	\important{\centerline{\textbf{#1}}}
+    \end{LARGE}
+}
+
+\newcommand{\sectionTitle}[1]{
+	\begin{Large}
+    	\important{\textbf{#1}}\newline
+    \end{Large}
+    \important{\noindent\rule{19cm}{0.4pt}} \newline
+}
+
+\newcommand\textbox[1]{
+  \parbox{.333\textwidth}{#1}
+}
+
+\newenvironment{Jobsection}[3]{ % 3 input arguments - company name,  job title and duration
+\noindent\textbox{\bf #1\hfill}\textbox{\hfil #2\hfil}\textbox{\hfill #3}
+  \begin{list}{$\bullet$}{\leftmargin=1em} % \bullet used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.5em} % Some space after the list of bullet points
+}
+
+
+
+\setlength{\parindent}{0pt}
+\thispagestyle{empty} % no page numbers
+\begin{document}
+\titleX{Kaustubh Hiware}
+\normalsize
+% 150, Ulhas Nagar, Manewada Square, Nagpur, India 
+\vspace{6pt}
+\greyed{\centerline{\faEnvelopeO \, \href{mailto:hiwarekaustubh@iitkgp.ac.in}{ 
+hiwarekaustubh@iitkgp.ac.in} \, $\bullet$ \,\faMobile\, +91 87688\, 29567\, $\bullet$ \, 
+\faTwitter \, \href{https://twitter.com/kaustubhhiware}{@KaustubhHiware} \, $\bullet$ \, 
+\faGithub \, \href{https://github.com/kaustubhhiware}{@KaustubhHiware}
+}}
+
+\vspace{2pt}
+\sectionTitle{Education}
+\begin{Jobsection}{Indian Institute of Technology,\\ Kharagpur}{Bachelor's \& Master's of 
+Technology \centerline{in Computer Science \& Engineering}}{Apr $^{\prime}$14 - Jun 
+$^{\prime}$ 19 (expected) \\\hspace*{\fill} CGPA: 8.29/10}
+\item
+\end{Jobsection}
+
+\begin{Jobsection}{Sandipani School, Nagpur}{Higher Secondary School Education}{2012}
+\item Overall CGPA: 10/10
+\item Represented school at multiple city-level debates, extempores and quizzes.
+\item Held student position for 3 yrs - As House vice-captain, then Deputy Head Boy and as 
+Head Boy.
+\end{Jobsection}
+% -----------------------------------
+
+
+\sectionTitle{Technical skills}
+$\bullet$ Programming Languages: Python,\, C/C++,\, Javascript/NodeJS \, (Proficient)\, $\|$ 
+C\#,\, Java,\, Scala,\, R\, (Familiar) \\
+$\bullet$ Web : HTML, CSS/SCSS, Bootstrap, Jekyll, Django, React, Angular \\
+$\bullet$  Frameworks/Tools
+: OpenCV, Postman, Spark, MongoDB, Git, Shell, Elasticsearch, Heroku, LATEX, Markdown
+% -----------------------------------
+
+\sectionTitle{Work Experience}
+\begin{Jobsection}{Schlumberger, Pune Tech Center}{Software Intern}{ May $^{\prime}$18 - 
+Jun$^{\prime}$18}
+\item Developed {\bf RESTful backend API} in C\#, .NET that provided endpoints to existing 
+computation engine.
+\item Wrote a DLS-compliant {\bf frontend in AngularJS}, which was tested  by multiple field 
+experts from India and Malaysia.
+\item Rewarded a {\bf Pre-Placement Offer} as Software Engineer for diligent contribution to 
+the organisation.
+\end{Jobsection}
+
+\begin{Jobsection}{Schlumberger, Pune Technology Center}{Software Intern}{ May $^{\prime}$18 
+- Jun$^{\prime}$18}
+\item Developed RESTful backend API from scratch in C\#, .NET that provided endpoints to 
+existing computation engine.
+\item Wrote a DLS-compliant frontend in AngularJS, which was tested  by multiple field 
+experts from India and Malaysia.
+\item Rewarded a Pre-Placement Offer as Software Engineer for diligent contribution to the 
+organisation.
+\end{Jobsection}
+% -----------------------------------
+
+\sectionTitle{Additional skills}
+% -----------------------------------
+
+\end{document}
+
