@@ -31,9 +31,19 @@
 
 \newcommand{\sectionTitle}[1]{
 	\begin{Large}
-    	\important{\textbf{#1}}\newline
+    	\important{\textbf{#1}}
     \end{Large}
-    \important{\noindent\rule{19cm}{0.4pt}} \newline
+    \important{\noindent\rule{17cm}{0.4pt}} \newline
+}
+
+\newcommand{\sectionSubtitleX}[1]{
+	\begin{large}
+    \important{#1}
+    \end{large}
+}
+
+\newcommand{\fillit}[1]{
+	\leavevmode\xleaders\hbox{#1}\hfill\kern0pt
 }
 
 \newcommand\textbox[1]{
@@ -61,23 +71,66 @@
 \greyed{\centerline{\faEnvelopeO \, \href{mailto:hiwarekaustubh@iitkgp.ac.in}{ 
 hiwarekaustubh@iitkgp.ac.in} \, $\bullet$ \,\faMobile\, +91 87688\, 29567\, $\bullet$ \, 
 \faTwitter \, \href{https://twitter.com/kaustubhhiware}{@KaustubhHiware} \, $\bullet$ \, 
-\faGithub \, \href{https://github.com/kaustubhhiware}{@KaustubhHiware}
+\faGlobe \, \href{https://kaustubhhiware.github.io}{KaustubhHiware.github.io}
 }}
 
-\vspace{2pt}
+\vspace{-2em}
 \sectionTitle{Education}
 \begin{Jobsection}{Indian Institute of Technology,\\ Kharagpur}{Bachelor's \& Master's of 
 Technology \centerline{in Computer Science \& Engineering}}{Apr $^{\prime}$14 - Jun 
 $^{\prime}$ 19 (expected) \\\hspace*{\fill} CGPA: 8.29/10}
-\item
+\item 2 Research papers published - at \, 
+\href{https://www.cse.iitk.ac.in/users/kripa/smerp2018/}{SMERP - WWW'18} \,\&\, 
+\href{https://sites.google.com/site/textgraphs2017/program}{ACL TextGraphs'17} and 1 
+\href{https://drive.google.com/file/d/1fCH2AAAHWp5JLwQxLNGoOYoGnyWrolHf/view?usp=sharing}{poster} 
+at \href{http://cse.iitkgp.ac.in/conf/NSDE/sds/ICNDE2018/pages/selected.html}{ICNDE'18}. 
+\item {\bf Speaker} at Kshitij's Open Source Summit on 
+\href{https://www.youtube.com/watch?v=lk4ciY3NSbA}{Innovations, Trends in Open Source}
+\item {\bf Maintainer, \href{http://metakgp.github.io}{MetaKGP}}: Conduct various activities 
+to promote hacker and collaboration culture on campus.
+\item {\bf Teaching Assistant, Machine Learning}: Assist in evaluating 220+ enrolled 
+students, the largest PG course.
+\item {\bf Open Source Mentor}: Guided freshers towards contributing to open source, in 
+\href{https://kwoc.kossiitkgp.in/}{Kharagpur Winter of Code} and 
+\href{https://gssoc.tech/projects.html#facebook-archive}{GirlScript Summer of Code}.\, Also 
+a 
+\href{https://drive.google.com/file/d/0B5iU6cWw36rOc0gzcjZPRTd5SkU/view?usp=sharing}{mentor} 
+to 6 Undergraduate students to guide them in non-academic pursuits.
 \end{Jobsection}
 
 \begin{Jobsection}{Sandipani School, Nagpur}{Higher Secondary School Education}{2012}
-\item Overall CGPA: 10/10
-\item Represented school at multiple city-level debates, extempores and quizzes.
+\item Represented school at multiple city-level debates, extempores and quizzes, maintaining 
+an overall CGPA of 
+\href{https://drive.google.com/file/d/0B5iU6cWw36rOdGpVVVBHUWVkajg/view?usp=sharing}{10/10}.
 \item Held student position for 3 yrs - As House vice-captain, then Deputy Head Boy and as 
 Head Boy.
 \end{Jobsection}
+
+\sectionSubtitleX{Projects} \fillit{\important{.}}
+\\
+\begin{rSubsection}{Emotion detection using Smart Devices}{Jul $^{\prime}$18 - 
+Apr$^{\prime}$18}{B.Tech Project under Prof. Bivas Mitra \& Prof. Niloy Ganguly}{CSE Dept., 
+IIT Kharagpur}
+\item Investigated the role of touch interactions in {\bf multi-state emotion detection}. 
+Involves jointly modeling typing features and  user provided self-reports(via a developed 
+android application) to build a {\bf personalized machine learning model}. Obtained an 
+accuracy of {\bf 73\%}.
+\item 2 research publications submitted, pending review - at 
+\href{https://recsys.acm.org/recsys18/}{RecSys} and 
+\href{http://www.ieeesmc.org/publications/transactions-on-human-machine-systems}{THMS} 
+journal.
+\end{rSubsection}
+
+\begin{rSubsection}{Core CS projects}{\hspace*{\fill} Pursued as a part of curriculum}{}{}
+\item Implemented a queue based scheduler, memory management and signal handling for 
+\href{https://github.com/kaustubhhiware/OSLab}{pintOS prototype}.
+\item Implemented a \href{https://github.com/kaustubhhiware/cOMPILER}{restricted grammar C 
+compiler} made using flex,yacc and gnu assembler.
+\item Implemented L2 forwarding, L3 static routing and reliable UDP protocols, and 
+\href{https://github.com/kaustubhhiware/fissnet}{P2P file-sharing system}.
+\item More projects can be found at 
+\href{https://kaustubhhiware.github.io/#projects}{kaustubhhiware.github.io/\#projects}.
+\end{rSubsection}
 % -----------------------------------
 
 
@@ -90,8 +143,8 @@ $\bullet$  Frameworks/Tools
 % -----------------------------------
 
 \sectionTitle{Work Experience}
-\begin{Jobsection}{Schlumberger, Pune Tech Center}{Software Intern}{ May $^{\prime}$18 - 
-Jun$^{\prime}$18}
+\begin{Jobsection}{\href{https://drive.google.com/file/d/1EcfIC_g8bx3whaxMdOkFyZx4TCqA1RAq/view?usp=sharing}{Schlumberger, 
+Pune Tech Center}}{Software Intern}{ May $^{\prime}$18 - Jun$^{\prime}$18}
 \item Developed {\bf RESTful backend API} in C\#, .NET that provided endpoints to existing 
 computation engine.
 \item Wrote a DLS-compliant {\bf frontend in AngularJS}, which was tested  by multiple field 
@@ -100,18 +153,22 @@ experts from India and Malaysia.
 the organisation.
 \end{Jobsection}
 
-\begin{Jobsection}{Schlumberger, Pune Technology Center}{Software Intern}{ May $^{\prime}$18 
-- Jun$^{\prime}$18}
-\item Developed RESTful backend API from scratch in C\#, .NET that provided endpoints to 
-existing computation engine.
-\item Wrote a DLS-compliant frontend in AngularJS, which was tested  by multiple field 
-experts from India and Malaysia.
-\item Rewarded a Pre-Placement Offer as Software Engineer for diligent contribution to the 
-organisation.
+\begin{Jobsection}{\href{https://drive.google.com/file/d/0B5iU6cWw36rOVWZIcllPY3RSd2c/view?usp=sharing}{Elanic, 
+Bangalore}}{Backend developer Intern}{ May $^{\prime}$17 - Jun$^{\prime}$17}
+\item Built complete CRUD for 2 classes, in NodeJS REST API. Abstraction written extended to 
+{\bf 50\%} of all classes.
+\item Developed a npm module \href{https://www.npmjs.com/package/urlparamify}{urlparamify} 
+to be used in website, which received over {\bf 3000} downloads so far.
 \end{Jobsection}
 % -----------------------------------
 
 \sectionTitle{Additional skills}
+$\bullet$ {\bf Achievements} : Received state level scholarship for three years (2008-2011), 
+qualified for INSPIRE scholarship {\bf (0.01\% students)}, another project shortlisted for 
+\href{https://drive.google.com/file/d/0B5iU6cWw36rOamZLWHZENWdlY0k/view?usp=sharing}{Smart 
+India Hackathon} (only 1200 of 8000+ selected) (2017).\\
+$\bullet$ {\bf Personal Interests} : Promote open source on campus , 
+\href{http://github.com/kaustubhhiware}{coding} in free time, amateur Table Tennis player.
 % -----------------------------------
 
 \end{document}
