@@ -1,0 +1,161 @@
+\documentclass[11pt, a4paper]{resume}
+\usepackage[top=0.6in,left=0.3in,right=0.3in,bottom=0.6in,scale=0.9]{geometry} % Document margins
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{lipsum}
+\usepackage{array}
+\usepackage{linegoal}
+\usepackage{enumitem}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+% \renewcommand{\familydefault}{\sfdefault} %sans-serif everywhere
+
+\definecolor{mypurple}{HTML}{794BC4}
+\definecolor{gray}{HTML}{727272}
+\newcommand{\important}[1]{
+	\textcolor{mypurple}{#1}
+}
+\newcommand{\greyed}[1]{
+	\textcolor{gray}{#1}
+}
+\newcommand{\titleX}[1]{
+	\begin{LARGE}
+    	\important{\centerline{\textbf{#1}}}
+    \end{LARGE}
+}
+
+\newcommand{\fillit}[1]{
+	\leavevmode\xleaders\hbox{#1}\hfill\kern0pt
+}
+
+\newcommand{\sectionTitle}[1]{
+	\begin{Large}
+    	\important{\textbf{#1}} 
+    \end{Large}
+    \important{\rlap{\rule[.5ex]{\linegoal}{0.5pt}}{}}
+%     \important{\underline{{\hspace{\textwidth}}}}
+%     \fillit{\important{\rule{0.5cm}{0.4cm}}}
+     \vspace{0.1em}\\
+%     \important{\noindent\rule{17cm}{0.4pt}} \newline
+}
+
+\newcommand{\sectionSubtitleX}[1]{
+	\begin{large}
+    \important{#1}
+    \end{large}
+    \fillit{\important{.}}
+}
+
+\newcommand{\textbox}[1]{
+  \parbox{.333\textwidth}{#1}
+}
+
+\newenvironment{Jobsection}[3]{ % 3 input arguments - company name,  job title and duration
+\noindent\textbox{\bf #1\hfill}\textbox{\hfil #2\hfil}\textbox{\hfill #3}
+  \begin{list}{$\bullet$}{\leftmargin=1em} % \bullet used for bullets, no indentation
+   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+  }{
+  \end{list}
+  \vspace{0.2em} % Some space after the list of bullet points
+}
+
+\newcommand{\education}[3]{ % 3 input arguments - company name,  job title and duration
+\noindent\parbox{.3\textwidth}{\bf #1\hfill}\parbox{.45\textwidth}{\hfil #2\hfil}\parbox{.25\textwidth}{\hfill #3}
+}
+
+
+\setlength{\parindent}{0pt}
+\thispagestyle{empty} % no page numbers
+\begin{document}
+\titleX{Kaustubh Hiware}
+\normalsize
+% 150, Ulhas Nagar, Manewada Square, Nagpur, India 
+\vspace{6pt}
+\greyed{\centerline{\faEnvelopeO \, \href{mailto:hiwarekaustubh@iitkgp.ac.in}{ hiwarekaustubh@iitkgp.ac.in} \, $\bullet$ \,\faMobile\, +91 87688\, 29567 \, $\bullet$ \,\faGithub \, \href{https://github.com/kaustubhhiware}{KaustubhHiware} \,  $\bullet$ \, \faGlobe \, \href{https://kaustubhhiware.github.io}{KaustubhHiware.github.io}}}
+
+\vspace{-2em}
+
+\sectionTitle{Education\vspace{0.5em}}
+\education{Indian Institute of Technology,\\ Kharagpur}{\centerline{Bachelor's \& Master's of Technology} \centerline{in Computer Science \& Engineering}}{Apr $^{\prime}$14 - Jun $^{\prime}$ 19 (expected) \\\hspace*{\fill} CGPA: 8.29/10}
+% \vspace{0.05em}\\
+% \education{Shivaji Science College, Nagpur}{Higher Secondary School Education, 2014}{95.54\%\,(99.98\%ile)}\\
+% \education{Sandipani School, Nagpur}{Secondary School Education, CBSE, 2012}{96.8\%}
+
+\sectionSubtitleX{Publications}
+\begin{list}{}{ % List for each individual item in the section
+    \setlength{\leftmargin}{1.5em} % Margin within the section
+  }
+\item [[a\hspace{-0.5em}]] R. Dutt, \underline{K. Hiware}, A. Ghosh, R. Bhaskaran. "\href{https://www.cse.iitk.ac.in/users/kripa/smerp2018/savitr-system-real-ritam.pdf}{SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies.} "In: \textit{Exploitation of Social Media for Emergency Relief and Preparedness (SMERP), colocated with The Web Conference 2018 (formerly WWW)} \hspace*{\fill}\textbf{\small Key Topics}: Emergencies, microblogs, location extraction, Geonames
+
+\item [[b\hspace{-0.5em}]] A. Krishna, P. Satuluri, H. Ponnada, M. Ahmed, G. Arora, \underline{K. Hiware}, P. Goyal. "\href{http://www.aclweb.org/anthology/W17-2409}{A Graph Based Semi-Supervised Approach for Analysis of Derivational Nouns in Sanskrit}" In: \textit{TextGraphs-11: the Workshop on Graph-based Methods for Natural Language Processing, ACL 2017} \hspace*{\fill}\textbf{\small Key Topics}: Sanskrit Word-Segmentation, Network-based learning, NLP
+\end{list}
+
+\sectionSubtitleX{Projects}
+\\
+\begin{rSubsection}{Deep Learning in Legal Data Analytics}{Jul $^{\prime}$18 - Present}{M.Tech Project under Prof. Saptarshi Ghosh}{\hspace*{\fill} CSE Dept., IIT Kharagpur}
+\item \textit{Abstract} - Building a \textbf{knowledge graph} for Indian legal system (where nodes are court cases, Acts, sections, etc).
+\item Understand the similarity between legal documents (precursor to prior case retrieval), and deploy a \textbf{search engine} with court cases segmentation.
+\item Aim to develop a chatbot to assist common people seeking professional advice by historic cases lookup.
+\end{rSubsection}
+
+\begin{rSubsection}{Emotion detection using Smart Devices}{Jul $^{\prime}$17 - Apr$^{\prime}$18}{B.Tech Project under Prof. Bivas Mitra \& Prof. Niloy Ganguly}{\hspace*{\fill} CSE Dept., IIT Kharagpur}
+\item Investigated the role of touch interactions in {\bf multi-state emotion detection}. Involves jointly modeling typing features and  user provided self-reports to build a {\bf personalized machine learning model}. Obtained an accuracy of {\bf 73\%}.
+\item 2 research publications submitted, pending review - at \href{https://recsys.acm.org/recsys18/}{RecSys} and \href{http://www.ieeesmc.org/publications/transactions-on-human-machine-systems}{THMS} journal.
+\end{rSubsection}
+
+\begin{rSubsection}{SAVITR: A System for Real-time Location Extraction from Microblogs during Emergencies.}{Jul $^{\prime}$17 - Apr$^{\prime}$18}{Research Project under Prof. Saptarshi Ghosh}{\hspace*{\fill} CSE Dept., IIT Kharagpur}
+\item The objective was to create a pre-warning system to detect potential disaster situations: \href{http://savitr.herokuapp.com}{savitr.herokuapp.com}
+\item Helps identify geospatial distribution of important tweets and classifying tweets as situational and non-situational, which can help in disaster relief and mitigation. A paper on the same was accepted at \href{https://www.cse.iitk.ac.in/users/kripa/smerp2018/}{SMERP - WWW'18}.
+\end{rSubsection}
+
+\begin{rSubsection}{Core CS projects}{\hspace*{\fill} Pursued as a part of curriculum}{}{}
+\item Implemented a queue based scheduler, memory management and signal handling for \href{https://github.com/kaustubhhiware/OSLab}{pintOS prototype}.
+\item Implemented a \href{https://github.com/kaustubhhiware/cOMPILER}{restricted grammar C compiler} made using flex,yacc and gnu assembler.\\
+$\bullet$ I work on multiple hobby projects, available on \href{https://github.com/kaustubhhiware}{GitHub} - a \href{https://github.com/kaustubhhiware/ NotiFyre}{terminal notifier},an\,\href{https://github.com/kaustubhhiware/c0derunR}{ NLP-powered IDE}, a\,\href{https://github.com/kaustubhhiware/Foodspark}{food-ordering portal} and a\,\href{https://github.com/kaustubhhiware/facebook-archive}{facebook data analysis toolkit} amongst others. More here: \href{https://kaustubhhiware.github.io/#projects}{kaustubhhiware.github.io/\#projects}.
+\end{rSubsection}
+
+\sectionSubtitleX{Coursework} 
+\begin{tabular}{>{\footnotesize}c>{\footnotesize}c>{\footnotesize}c>{\footnotesize}c>{\footnotesize}c}
+Deep Learning$^+$ & Machine Learning & Natural Language Processing$^+$ & Image Processing\*$^+$ & Artificial Intelligence \\
+Data Analytics$^+$ & Social Computing$^+$ & Database Management Systems$^+$ & Computer Networks$^+$ & Software Engineering$^+$ \\
+Compilers$^+$ & Algorithms 1$^+$ \& 2 & Parallel \&Distributed Algorithms* & Operating Systems$^+$ & {\scriptsize [* Ongoing]\,\,[$^+$ \,\,Practicum included]} \\
+\end{tabular}\\
+% -----------------------------------
+
+\sectionTitle{Work Experience}
+\begin{Jobsection}{\href{https://drive.google.com/file/d/1EcfIC_g8bx3whaxMdOkFyZx4TCqA1RAq/view?usp=sharing}{Schlumberger, Pune Tech Center}}{Software Intern}{ May $^{\prime}$18 - Jun$^{\prime}$18}
+\item Developed {\bf RESTful backend API} in C\#, .NET that provided endpoints to existing computation engine.
+\item Wrote a DLS-compliant {\bf frontend in AngularJS}, which was tested  by multiple field experts from India and Malaysia.
+\item Rewarded a {\bf Pre-Placement Offer} as Software Engineer for diligent contribution to the organisation.
+\end{Jobsection}
+
+\begin{Jobsection}{\href{https://drive.google.com/file/d/0B5iU6cWw36rOVWZIcllPY3RSd2c/view?usp=sharing}{Elanic, Bangalore}}{Backend developer Intern}{ May $^{\prime}$17 - Jun$^{\prime}$17}
+\item Built complete CRUD for 2 classes, in NodeJS REST API. Abstraction written extended to {\bf 50\%} of all classes.
+\item Developed a npm module \href{https://www.npmjs.com/package/urlparamify}{urlparamify} to be used in website, which received over {\bf 3000} downloads so far.
+\end{Jobsection}
+% -----------------------------------
+
+\sectionTitle{Technical skills}
+$\bullet$ Programming Languages: Python,\, C/C++,\, Javascript/NodeJS \, (Proficient)\, $\|$ C\#,\, Java,\, Scala,\, R\, (Familiar) \\
+$\bullet$ Web : HTML, CSS/SCSS, Bootstrap, Jekyll, Django, React, Angular \\
+$\bullet$  Frameworks/Tools
+: OpenCV, Postman, Spark, MongoDB, Git, Shell, Elasticsearch, Heroku, LaTeX, Markdown
+% -----------------------------------
+
+\sectionTitle{Extra-curricular}
+$\bullet$ 1 \href{https://drive.google.com/file/d/1fCH2AAAHWp5JLwQxLNGoOYoGnyWrolHf/view?usp=sharing}{Research poster} accepted at \href{http://cse.iitkgp.ac.in/conf/NSDE/sds/ICNDE2018/pages/selected.html}{ICNDE'18}, IIT Kharagpur. \\
+$\bullet$ {\bf Speaker} at Kshitij's Open Source Summit on \href{https://www.youtube.com/watch?v=lk4ciY3NSbA}{Innovations, Trends in Open Source}\\
+$\bullet$ {\bf Maintainer, \href{http://metakgp.github.io}{MetaKGP}}: Conduct various activities to promote hacker and collaboration culture on campus.\\
+$\bullet$ {\bf Teaching Assistant, Machine Learning}: Assist in evaluating 220+ enrolled students, the largest PG course.\\
+$\bullet$ {\bf Open Source Mentor}: Guided freshers towards contributing to open source, in \href{https://kwoc.kossiitkgp.in/}{Kharagpur Winter of Code} and \href{https://gssoc.tech/projects.html#facebook-archive}{GirlScript Summer of Code}.\, Also a \href{https://drive.google.com/file/d/0B5iU6cWw36rOc0gzcjZPRTd5SkU/view?usp=sharing}{mentor} to 6 junior students to guide them in non-academic pursuits.
+% -----------------------------------
+
+\end{document}
