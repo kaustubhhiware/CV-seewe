@@ -1,5 +1,5 @@
 \documentclass[11pt, a4paper]{resume}
-\usepackage[top=0.3in,left=0.3in,right=0.3in,bottom=0.6in,scale=0.9]{geometry} % Document margins
+\usepackage[top=0.25in,left=0.3in,right=0.3in,bottom=0.6in,scale=0.9]{geometry} % Document margins
 \usepackage{xcolor}
 \usepackage{fontawesome}
 \usepackage[utf8]{inputenc}
@@ -21,24 +21,24 @@
 \definecolor{mypurple}{HTML}{794BC4}
 \definecolor{gray}{HTML}{727272}
 \newcommand{\important}[1]{
-	\textcolor{mypurple}{#1}
+  \textcolor{mypurple}{#1}
 }
 \newcommand{\greyed}[1]{
-	\textcolor{gray}{#1}
+  \textcolor{gray}{#1}
 }
 \newcommand{\titleX}[1]{
-	\begin{LARGE}
-    	\important{\centerline{\textbf{#1}}}
+  \begin{LARGE}
+      \important{\centerline{\textbf{#1}}}
     \end{LARGE}
 }
 
 \newcommand{\fillit}[1]{
-	\leavevmode\xleaders\hbox{#1}\hfill\kern0pt
+  \leavevmode\xleaders\hbox{#1}\hfill\kern0pt
 }
 
 \newcommand{\sectionTitle}[1]{
-	\begin{Large}
-    	\important{\textbf{#1}} 
+  \begin{Large}
+      \important{\textbf{#1}} 
     \end{Large}
     \important{\rlap{\rule[.5ex]{\linegoal}{0.5pt}}{}}
 %     \important{\underline{{\hspace{\textwidth}}}}
@@ -48,7 +48,7 @@
 }
 
 \newcommand{\sectionSubtitleX}[1]{
-	\begin{large}
+  \begin{large}
     \important{#1}
     \end{large}
     \fillit{\important{.}}
@@ -126,9 +126,9 @@ $\bullet$ I work on multiple hobby projects, available on \href{https://github.c
 
 \sectionSubtitleX{Coursework} 
 \begin{tabular}{>{\footnotesize}c>{\footnotesize}c>{\footnotesize}c>{\footnotesize}c>{\footnotesize}c}
-Deep Learning\textasciicircum & Machine Learning & Natural Language Processing\textasciicircum & Image Processing\*\textasciicircum & Artificial Intelligence \\
-Data Analytics\textasciicircum & Social Computing\textasciicircum & Database Management Systems\textasciicircum & Computer Networks\textasciicircum & Software Engineering\textasciicircum \\
-Compilers\textasciicircum & Algorithms 1\textasciicircum \& 2 & Parallel \&Distributed Algorithms* & Operating Systems\textasciicircum & {\scriptsize [* Ongoing]\,\,[\textasciicircum \,\,Practicum included]} \\
+Deep Learning$^+$ & Machine Learning & Natural Language Processing$^+$ & Image Processing\*$^+$ & Artificial Intelligence \\
+Data Analytics$^+$ & Social Computing$^+$ & Database Management Systems$^+$ & Computer Networks$^+$ & Software Engineering$^+$ \\
+Compilers$^+$ & Algorithms 1$^+$ \& 2 & Parallel \&Distributed Algorithms* & Operating Systems$^+$ & {\scriptsize [* Ongoing]\,\,[$^+$ \,\,Practicum included]} \\
 \end{tabular}\\
 % -----------------------------------
 
@@ -146,5 +146,10 @@ $\bullet$ {\bf Maintainer, \href{http://metakgp.github.io}{MetaKGP}}: Conduct va
 $\bullet$ {\bf Teaching Assistant, Machine Learning}: Assist in evaluating 220+ enrolled students, the largest PG course.\\
 $\bullet$ {\bf Open Source Mentor}: Guided freshers towards contributing to open source, in \href{https://kwoc.kossiitkgp.in/}{Kharagpur Winter of Code} and \href{https://gssoc.tech/projects.html#facebook-archive}{GirlScript Summer of Code}.\, Also a \href{https://drive.google.com/file/d/0B5iU6cWw36rOc0gzcjZPRTd5SkU/view?usp=sharing}{mentor} to 6 junior students to guide them in non-academic pursuits.
 % -----------------------------------
-
+  \vspace*{\fill}
+    \vspace{-0.63em}
+  \begin{flushright}
+  \scriptsize Last updated: Sep 02, 2018.
+  \end{flushright}
+    
 \end{document}
